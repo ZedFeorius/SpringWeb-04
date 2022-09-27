@@ -13,6 +13,5 @@ import java.util.List;
  * @describe TODO
  */
 public interface UserService {
-
     List<User> getUserList();
 }
