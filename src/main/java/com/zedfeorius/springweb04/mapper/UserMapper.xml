@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zedfeorius.springweb04.mapper.UserMapper">
+    <cache eviction="FIFO" flushInterval="100000" size="512" readOnly="true"/>
+    <select id="getUserList" resultType="com.zedfeorius.springweb04.entity.User">
+        SELECT * FROM test.user
+    </select>
+</mapper>
